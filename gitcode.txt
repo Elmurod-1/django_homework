@@ -37,3 +37,15 @@ BRANCH -- bo'lim degani, uyangi xususiyatlar bilan mustaqil ishlashga imkon bera
 git branch      # bu bizda bor barcha branchlar ro'yhatini chiqarib beradi
 git branch new_branch_name      # yangi branch yaratish
 git checkout new_branch_name # bu yangi hosil qilingan branchga o'tadi
+git merge master       # yani bunda qaysi brenchda turgan bo'lsa merge orqali ko'rsatilgan branchdagi malumotlarni
+        # yani master branchdagilarni o'zi turgan branchga qo'shadi, master dagi va o'zi turgan branchdagi bir hil fayyillarni masterdagi
+        # fayl holatiga o'tqizadi. "branchlarni almashtirishda branch commit qilinadigan narsasi bo'masligi kerak"
+        # yani ishlangan fayllar bo'lmasligi kerak
+
+
+git clone     # bu orqali github dagi korsatilgan repozitoryni o'zi turgan papkaga yuklaydi va bog'lanadi bir biriga
+
+git remote add origin https://github.com/Elmurod-1/Markets.git # yani ko'rsatilgan url dagi git repozitoriysiga bog'lanadi
+git push -u origin master # yani master branch dagi fayllarni bog'langan repozitoriyga jo'natadi
+
+urlga bog'lashda qandaydir biroz kamchiliklar bo'liyabdi
