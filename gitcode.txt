@@ -1,0 +1,39 @@
+git config --list # git totmonidan o'rnatilgan sozlamalarini ko'rsatadi
+git config user.name    # bu gitga o'rantilga usernameni ko'rsatadi
+git config --global user.name "username" # bu gitni usernamesini o'rnatish yoki o'zgartirish mn
+
+git config user.email   # bu git bog'langan emailni qaytaradi
+git config --global user.email "useremail"  # buda email o'rnatish yoki o'zgartirish mn bo'ladi
+
+git init    # yangi git loyihasini boshlash uchun ishlatiladi
+git status  # malumotlarni bajarilganligini tekshiradi
+
+git add # ma'lumot qo'shish yani hosil qilingan, o'zgartirilgan, o'chirilgan va boshqalarni hotiraga oladi
+git add index.html # faylni nomi orqali qo'shish
+git add . # ma'lumotlar shu fayldagi bajarilgan ishlarni qo'shadi
+
+git commit # add bo'lganlarni hotiradan olib saqlaydi
+git commit -m"qilingan ishlar yoziladi" # qo'shtirnoq ichida yani qilingan ish yoziladi eslab qolish uchun
+git log / git log --pretty  # qilingan commit malumotlarni chiqaradi
+
+git checkout --index.html   # o'zgartirilgan faylni commit qilingandagi holga qaytaradi
+git checkout -- .   # o'zgartirilgan fayllarni commit qilingandagi holga qaytaradi
+
+git checkout 9eb5e594366cfb8392675bf217fc18dc2bcc4a2e # qilsa kiritilgan kod dagi commit holatiga qaytadi
+
+
+git reset idex.html # bu  o'zgartirilgan , hosilqilingan .. larni add orqali hotiraga yani navbatga qo'shgan malumotni o'chiradi
+                    # lekin fayylardagi malumotlarga tasir qilmaydi
+# git reset staged #
+
+git commit -a -m"add va commitni bittada bajarish" # bu teminalda ishlamadi add va commitni bittada bajarish
+            # shunga avval add qib keyyin commit qilish kerak bo'ladi
+
+git commit --amend # bu ohitgi qilingan commitni komentariyasi nomini o'zgartirish to'g'irlash mn
+
+# BRANCH haqida
+BRANCH -- bo'lim degani, uyangi xususiyatlar bilan mustaqil ishlashga imkon beradi
+
+git branch      # bu bizda bor barcha branchlar ro'yhatini chiqarib beradi
+git branch new_branch_name      # yangi branch yaratish
+git checkout new_branch_name # bu yangi hosil qilingan branchga o'tadi
